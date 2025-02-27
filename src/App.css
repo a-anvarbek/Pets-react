@@ -1,125 +1,215 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-body {    
-    background-image: url('http://pets-images.dev-apis.com/pets/wallpaperB.jpg');
-    /* background-size: cover; */
-    background-position: center;
+body {
+  background-image: url("http://pets-images.dev-apis.com/pets/wallpaperB.jpg");
+  background-position: center;
 }
 
 #root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
 }
 
 .container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    max-width: 1000px;
-    width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .containerInputs {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 360px;
-    box-shadow: 0px 0px 12px #aaa;
-    padding: 20px;
-    border-radius: 6px;
-    background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0px 0px 12px #aaa;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
 }
 
 .containerInputs h1 {
-    text-align: center;
-    margin-bottom: 15px;
-    color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .containerInputs p {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #444;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #444;
 }
 
 .containerInputs button:hover {
-    background: #0056b3;
+  background: #0056b3;
 }
 
 .containerReturn {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0px 0px 12px #aaa;
-    overflow-y: auto;
-    max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 12px #aaa;
+  overflow-y: auto;
+  max-height: 600px;
+  cursor: pointer;
 }
 
 .details {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    gap: 15px;
-    text-decoration: none;
-    color: black;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  gap: 15px;
+  text-decoration: none;
+  color: black;
 }
 
 .details .img img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .details .info {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .details .info h1 {
-    font-size: 20px;
-    color: #333;
+  font-size: 20px;
+  color: #333;
+}
+
+.url{
+    margin: 10px 0 20px 0;
+    width: 100%;
+    height: 190px;
+    border-radius: 250px;
+}
+
+.petTo {
+  direction: none;
+  text-decoration: none;
+  width: 100%;
 }
 
 .details .info h2 {
-    font-size: 16px;
-    color: #666;
+  font-size: 16px;
+  color: #666;
 }
 
-
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .containerInputs, .containerReturn {
-        width: 100%;
-        max-width: 500px;
-    }
+  .containerInputs,
+  .containerReturn {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 480px) {
-    .containerInputs p, .containerInputs h1 {
-        font-size: 1em;
-    }
-    .details .info h1 {
-        font-size: 20px;
-    }
-    .details .info h2 {
-        font-size: 16px;
-    }
+  .containerInputs p,
+  .containerInputs h1 {
+    font-size: 1em;
+  }
+  .details .info h1 {
+    font-size: 20px;
+  }
+  .details .info h2 {
+    font-size: 16px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("http://pets-images.dev-apis.com/pets/wallpaperB.jpg");
+  background-position: center;
+  margin: 0;
+}
+
+.details-container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  min-width: 400px;
+  width: 400px;
+  /* height: 530px; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+}
+
+.details-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5px 0 10px 0;
+}
+
+.details-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px;
+}
+
+.details-container h2 {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.details-container h3 {
+  font-size: 1.3em;
+  color: #444;
+  margin: 5px 0;
+}
+
+.details-container p {
+  font-size: 1.1em;
+  color: #444;
+  margin: 5px 0;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.back-button:hover {
+  background: #0056b3;
 }

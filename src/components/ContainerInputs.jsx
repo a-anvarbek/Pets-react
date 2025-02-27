@@ -7,6 +7,12 @@ const ContainerInputs = () => {
     <div className="containerInputs">
       <h1>Pet Finder</h1>
 
+      <img
+        src="https://i.postimg.cc/t4Rzcsbd/pexels-pet-foto-644780685-17802938.jpg"
+        alt=""
+        className="url"
+      />
+
       <p>Location</p>
       <Location placeholder="Enter Location"></Location>
 
